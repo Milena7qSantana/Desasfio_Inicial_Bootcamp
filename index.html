@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Milena de Matos Santana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #111827;
+        color: #d1d5db;
+      }
+      .section-card {
+        background-color: #1f2937;
+        border: 1px solid #374151;
+        border-radius: 0.75rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .section-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+          0 4px 6px -2px rgba(0, 0, 0, 0.15);
+      }
+      h1,
+      h2,
+      h3 {
+        color: #f9fafb;
+        font-weight: 700;
+      }
+      .accent-color {
+        color: #38bdf8;
+      }
+      .tag {
+        background-color: #374151;
+        color: #d1d5db;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+      nav a {
+        transition: color 0.3s ease;
+      }
+      nav a:hover {
+        color: #38bdf8;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header
+      class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold">Milena de Matos Santana</h1>
+        <div class="hidden md:flex space-x-6 text-gray-300">
+          <a href="#perfil">Perfil</a>
+          <a href="#curriculo">Currículo</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#recomendacoes">Recomendações</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <section
+        id="perfil"
+        class="section-card flex flex-col md:flex-row items-center gap-8 md:gap-12"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="https://placehold.co/160x160/38bdf8/f9fafb?text=Milena"
+            alt="Foto de Milena de Matos Santana"
+            class="rounded-full w-40 h-40 object-cover border-4 border-gray-700"
+          />
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-2">
+            Desenvolvedora e Analista de Infraestrutura
+          </h2>
+          <p class="mb-4 text-gray-400">
+            Sou uma profissional dedicada e proativa na área de tecnologia,
+            atualmente cursando Análise e Desenvolvimento de Sistemas. Minha
+            trajetória inclui experiências práticas em infraestrutura de redes e
+            suporte técnico, onde desenvolvi habilidades em administração de
+            sistemas, segurança e monitoramento. Meu objetivo é aplicar e
+            expandir meus conhecimentos em um ambiente de trabalho desafiador.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-2">
+            <a
+              href="mailto:milena.msanta@gmail.com"
+              class="flex items-center gap-2 hover:text-sky-400 transition-colors"
+            >
+              <i data-lucide="mail" class="w-5 h-5"></i> milena.msanta@gmail.com
+            </a>
+            <span class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5"></i> (+55) 11 99781-6914
+            </span>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-sky-400 transition-colors"
+            >
+              <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="curriculo" class="section-card">
+        <h2 class="text-2xl font-bold mb-6">Currículo</h2>
+
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+            <i data-lucide="briefcase" class="w-6 h-6 accent-color"></i>
+            Experiência Profissional
+          </h3>
+          <div class="space-y-6 border-l-2 border-gray-700 pl-6">
+            <div class="relative">
+              <div
+                class="absolute -left-[34px] top-1 w-4 h-4 bg-sky-400 rounded-full border-4 border-gray-900"
+              ></div>
+              <p class="text-sm text-gray-400">2024 - 2025 (6 meses)</p>
+              <h4 class="font-semibold text-white">
+                Assistente de Infraestrutura de Redes (Estágio)
+              </h4>
+              <p class="text-gray-300">Universidade de Mogi das Cruzes</p>
+              <ul
+                class="list-disc list-inside mt-2 text-gray-400 text-sm space-y-1"
+              >
+                <li>
+                  Configuração de switches, APs e administração com Active
+                  Directory.
+                </li>
+                <li>Gerenciamento de backup com ARCServer e criação de VMs.</li>
+                <li>
+                  Monitoramento de rede com Zabbix e administração de Windows
+                  Server e Linux (CentOS).
+                </li>
+                <li>
+                  Criação de regras de Firewall com Sophos e configuração de
+                  Proxy.
+                </li>
+              </ul>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute -left-[34px] top-1 w-4 h-4 bg-sky-400 rounded-full border-4 border-gray-900"
+              ></div>
+              <p class="text-sm text-gray-400">2022 - 2023 (1 ano)</p>
+              <h4 class="font-semibold text-white">
+                Suporte Técnico de Infraestrutura
+              </h4>
+              <p class="text-gray-300">Phibro Animal Health</p>
+              <ul
+                class="list-disc list-inside mt-2 text-gray-400 text-sm space-y-1"
+              >
+                <li>
+                  Administração e manutenção do ERP Oracle (J.D. Edwards).
+                </li>
+                <li>
+                  Controle e resolução de tickets de TI e participação em
+                  reuniões internacionais.
+                </li>
+                <li>
+                  Administração de redes, acessos e manutenção de backup dos
+                  servidores.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-6 h-6 accent-color"></i>
+              Formação Acadêmica
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-white">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
+                <p class="text-sm">
+                  CENTRO UNIVERSITÁRIO DE BRASÍLIA (UNICEUB) | 2025 - 2026
+                </p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
+                <p class="text-sm">
+                  UNIVERSIDADE DE MOGI DAS CRUZES (UMC) | 2024 - 2025
+                </p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Ensino Médio Completo</p>
+                <p class="text-sm">
+                  ESCOLA ESTADUAL MARIA ANGÉLICA SOAVE | 2019 - 2021
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+              <i data-lucide="award" class="w-6 h-6 accent-color"></i> Cursos e
+              Idiomas
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-white">
+                  Inglês - Intermediário Avançado (B2)
+                </p>
+                <p class="text-sm">Cultura Inglesa</p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Microsoft Azure</p>
+                <p class="text-sm">Implantação de serviços e banco de dados</p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">
+                  Lei Geral de Proteção de Dados (LGPD)
+                </p>
+              </div>
+              <div>
+                <p class="font-semibold text-white">
+                  Assistente Administrativo
+                </p>
+                <p class="text-sm">SENAI Celso Charuri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="section-card">
+        <h2 class="text-2xl font-bold mb-6">Projetos</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-sky-400 transition-colors"
+          >
+            <h3 class="text-lg font-bold text-white mb-2">
+              Monitoramento de Rede com Zabbix
+            </h3>
+            <p class="text-sm text-gray-400 mb-4">
+              Implementação e expansão do monitoramento da infraestrutura de
+              rede para incluir novos servidores críticos, com criação de
+              templates e alertas automatizados.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tag">Zabbix</span>
+              <span class="tag">Linux (CentOS)</span>
+              <span class="tag">PowerShell</span>
+            </div>
+
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 text-sky-400 hover:underline"
+            >
+              Ver detalhes <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-sky-400 transition-colors"
+          >
+            <h3 class="text-lg font-bold text-white mb-2">NestBaby</h3>
+            <p class="text-sm text-gray-400 mb-4">
+              Desenvolvimento de um protótipo de alta fidelidade sobre um
+              aplicativo de rede de apoio a mães no início da maternidade
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tag">Html</span>
+              <span class="tag">CSS</span>
+            </div>
+            <a
+              href="https://github.com/Milena7qSantana/NestBaby"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-sky-400 hover:underline"
+            >
+              Ver no GitHub <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section-card">
+        <h2 class="text-2xl font-bold mb-6">Habilidades e Competências</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white">Técnicas</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="tag">Windows Server</span>
+              <span class="tag">Linux (CentOS)</span>
+              <span class="tag">Active Directory</span>
+              <span class="tag">Firewall Sophos</span>
+              <span class="tag">Zabbix</span>
+              <span class="tag">Microsoft Azure</span>
+              <span class="tag">Virtualização</span>
+              <span class="tag">Redes e Roteamento</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">Oracle J.D. Edwards</span>
+              <span class="tag">ARCServer Backup</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white">Pessoais</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="tag">Resolução de Problemas</span>
+              <span class="tag">Comunicação</span>
+              <span class="tag">Trabalho em Equipe</span>
+              <span class="tag">Proatividade</span>
+              <span class="tag">Organização</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outros" class="section-card">
+        <h2 class="text-2xl font-bold mb-6">Outros</h2>
+        <p class="text-gray-400">
+          Possuo 13 anos de experiência com cubos mágicos e participo de
+          competições em diversas categorias. Tenho paixão por astrofotografia e
+          tenho servidores linux em um homelab onde gerencio arquivos, mídias e
+          uso como laboratório para pentest.
+        </p>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-700 mt-12 py-8">
+      <div class="container mx-auto px-6 text-center text-gray-500">
+        <p>
+          &copy; 2025 Milena de Matos Santana. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
